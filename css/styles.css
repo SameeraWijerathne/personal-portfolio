@@ -66,6 +66,11 @@ span {
     color: var(--main-color);
 }
 
+.heading {
+    font-size: 3rem !important;
+    font-weight: 700;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -223,8 +228,6 @@ span {
 
 .about-content-box h2 {
     text-align: left;
-    font-size: 3rem;
-    font-weight: 700;
 }
 
 .about-content-box h3 {
@@ -235,4 +238,50 @@ span {
 
 .about-content-box p {
     margin-top: 30px;
+}
+
+/* Education & Experience */
+.education .heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.education-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.education-box-container .education-box {
+    width: 30%;
+    background: var(--bg-color-secondary);
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid var(--bg-color-primary);
+    transition: .5s ease;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.education-box-container .education-box h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.education-box-container .education-box h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.education-box-container .education-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.1);
 }
