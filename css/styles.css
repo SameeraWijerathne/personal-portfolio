@@ -33,7 +33,7 @@ body {
 section {
     position: relative;
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 0;
     scroll-snap-align: start;
 }
 
@@ -43,6 +43,27 @@ section:nth-child(odd){
 
 section:nth-child(even){
     background-color: var(--bg-color-primary);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+}
+
+ion-icon {
+    font-size: 1.3rem;
+}
+
+span {
+    color: var(--main-color);
 }
 
 .header {
@@ -60,6 +81,8 @@ section:nth-child(even){
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
+/* Navigation Bar */
+
 #name-logo {
     color: var(--text-color);
     font-size: 1.2rem;
@@ -76,7 +99,16 @@ section:nth-child(even){
     color: var(--main-color);
 }
 
+/* Home Page */
+
+.home .container {
+    display: flex;
+    flex-direction: column;
+}
+
 .home-content-wrapper {
+    flex-grow: 1;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,25 +128,13 @@ section:nth-child(even){
     margin-bottom: 2rem;
 }
 
-span {
-    color: var(--main-color);
-}
-
 .home-content-box h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
-
-.home-content-box p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-}
-
-ion-icon {
-    font-size: 1.3rem;
-  }
 
 .social-media a {
     display: inline-flex;
@@ -165,4 +185,54 @@ ion-icon {
 .home-img-box img {
     width: 650px;
     width: 1300px;
+}
+
+/* About Me Page */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    background-color: var(--bg-color-secondary);
+}
+
+.about-img {
+    width: 400px;
+}
+
+.about-img img {
+    width: 600px;
+    position: relative;
+    left: -100px;
+}
+
+.about-img img::after {
+    content: "";
+    height: 600px;
+    background-color: red;
+    width: 600px;
+    position: absolute;
+    display: inline-block;
+    top: 100%;
+}
+
+.about-content-box h2 {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-content-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.about-content-box p {
+    margin-top: 30px;
 }
