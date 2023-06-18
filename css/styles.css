@@ -18,7 +18,6 @@
 html {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    /* font-size: 62.5%; */
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
@@ -71,7 +70,7 @@ span {
     color: var(--main-color);
 }
 
-.heading {
+.page-title {
     font-size: 3rem !important;
     font-weight: 700;
 }
@@ -246,7 +245,7 @@ span {
 }
 
 /* Education & Experience */
-.education .heading{
+.education .page-title{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -292,7 +291,7 @@ span {
 }
 
 /* Technical Skills */
-.technical .heading{
+.technical .page-title{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -341,7 +340,8 @@ span {
 }
 
 /* Portfolio (Projects) */
-.projects .heading{
+
+.projects .page-title{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -358,9 +358,9 @@ span {
     border-radius: 25px;
     width: 450px;
     height: 300px;
-    box-shadow: 0 0 25px var(--bg-color-secondary);
     overflow: hidden;
     display: flex;
+    box-shadow: 0 0 25px var(--bg-color-secondary);
 }
 
 .project-box img {
@@ -378,11 +378,11 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
+    text-align: center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     padding: 25px 25px;
     transform: translateY(-100%);
     transition: .5s ease;
@@ -394,16 +394,16 @@ span {
 }
 
 .project-box .project-overlay h3{
+    color: var(--bg-color-primary);
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 25px;
-    color: var(--bg-color-primary);
 }
 
 .project-box .project-overlay p{
+    color: var(--bg-color-secondary);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--bg-color-secondary);
     margin-bottom: 20px;
 }
 
@@ -420,12 +420,12 @@ span {
 .project-overlay a {
     width: 3.5rem;
     height: 3.5rem;
+    border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     background-color: var(--text-color);
     border: 1px solid var(--text-color);
-    border-radius: 50%;
 }
 
 .project-overlay a ion-icon {
@@ -444,7 +444,15 @@ span {
 
 
 /* Contact Me */
-.contact .heading{
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .page-title{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -504,4 +512,19 @@ span {
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: var(--bg-color-primary);*/
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    padding: 15px 0;
 }

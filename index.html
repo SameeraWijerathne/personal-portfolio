@@ -17,7 +17,7 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <!-- Nagivation Bar -->
+    <!-- Navigation Bar -->
     <header class="header" id="header">
         <div id="name-logo">SAMEERA</div>
         <nav class="navbar">
@@ -37,7 +37,7 @@
                 <div class="home-content-box">
                     <h3>Hello there, I am</h3>
                     <h1>SAMEERA WIJERATHNE</h1>
-                    <h3>And I'm a <span class="changing-text">Full Stack Developer</span></h3>
+                    <h3>And I'm a <span class="changing-text"></span></h3>
                     <p>
                         Hello! I am a Bachelor of Science of Engineering Honours Graduate from the Faculty
                         of
@@ -82,7 +82,7 @@
                 <img src="img/profile-picture.png" alt="Sameera Wijerathne">
             </div>
             <div class="about-content-box">
-                <h2 class="heading">ABOUT <span>ME</span></h2>
+                <h2 class="page-title">ABOUT <span>ME</span></h2>
                 <h3>Full Stack Developer</h3>
                 <p>
                     Welcome! I'm Sameera Wijerathna, a graduate engineering student with a passion for web
@@ -117,7 +117,7 @@
     <!-- Education & Experience Section -->
     <section class="education" id="education">
         <div class="container">
-            <h2 class="heading">EXPERIENCE &amp; <span>EDUCATION</span></h2>
+            <h2 class="page-title">EXPERIENCE &amp; <span>EDUCATION</span></h2>
             <div id="education-box-container-wrapper">
                 <div class="education-box-container">
                     <div class="education-box">
@@ -177,7 +177,7 @@
     <!-- Technical Skills Section -->
     <section class="technical" id="technical">
         <div class="container">
-            <h2 class="heading">TECHNICAL <span>SKILLS</span></h2>
+            <h2 class="page-title">TECHNICAL <span>SKILLS</span></h2>
             <div class="technical-box-container">
                 <div class="technical-box">
                     <h3>FRONT-END<br>TECHNOLOGIES</h3>
@@ -231,10 +231,10 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="heading">LATEST <span>PROJECTS</span></h2>
+            <h2 class="page-title">LATEST <span>PROJECTS</span></h2>
 
             <div class="project-container">
 
@@ -309,23 +309,28 @@
         </div>
     </section>
 
+<!-- Contact Me Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="heading">CONTACT <span>ME</span></h2>
+            <h2 class="page-title">CONTACT <span>ME</span></h2>
 
-            <form action="#" autocomplete="off">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Eg: Sameera Wijerathne">
-                    <input type="email" name="email" placeholder="Eg: contactme14@gmail.com">
-                    <input type="number" name="Mobile Number" placeholder="Eg: 0711234567">
+            <div class="frm-wrapper">
+                <form action="#" autocomplete="off">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Eg: Sameera Wijerathne">
+                        <input type="email" name="email" placeholder="Eg: contactme14@gmail.com">
+                        <input type="number" name="Mobile Number" placeholder="Eg: 0711234567">
+                    </div>
+                    <textarea name="message" cols="30" rows="12" placeholder="Type your message here!"></textarea>
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <div class="footer">
+                    <p>Copyright &copy; Sameera 2023 | All Rights Reserved.</p>
                 </div>
-                <textarea name="message" cols="30" rows="12" placeholder="Type your message here!"></textarea>
-                <!-- <input type="hidden" name="_captcha" value="false"> -->
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
     
-    <footer class="footer" id="footer"></footer>
 </body>
 </html>
