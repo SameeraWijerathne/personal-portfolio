@@ -7,11 +7,9 @@
 
 :root {
     --text-color: #fff;
-    --main-color: #0ef;
-    --main-color: #ff7c35;
-    --bg-color-primary: #1f242d;
+    /*--main-color: #ff7c35;*/
+    --main-color: #bb77ed;
     --bg-color-primary: #0e141f;
-    --bg-color-secondary: #323946;
     --bg-color-secondary: #1b2437;
 }
 
@@ -68,6 +66,24 @@ ion-icon {
 
 span {
     color: var(--main-color);
+}
+
+.animate-gradient-text, .animate-gradient-text-hero {
+    -webkit-text-fill-color: transparent;
+    animation: animated-gradient 5s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(120deg, #1cdce8, #bb77ed, #f34a62);
+    background-size: 200%;
+}
+
+@keyframes animated-gradient {
+    0%, to {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
 }
 
 .page-title {
@@ -192,7 +208,6 @@ span {
 }
 
 .home-img-box img {
-    width: 650px;
     width: 1300px;
 }
 
@@ -220,15 +235,15 @@ span {
     left: -100px;
 }
 
-.about-img img::after {
-    content: "";
-    height: 600px;
-    background-color: red;
-    width: 600px;
-    position: absolute;
-    display: inline-block;
-    top: 100%;
-}
+/*.about-img img::after {*/
+/*    content: "";*/
+/*    height: 600px;*/
+/*    background-color: red;*/
+/*    width: 600px;*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    top: 100%;*/
+/*}*/
 
 .about-content-box h2 {
     text-align: left;
@@ -245,6 +260,7 @@ span {
 }
 
 /* Education & Experience */
+
 .education .page-title{
     text-align: center;
     margin-bottom: 40px;
@@ -291,6 +307,7 @@ span {
 }
 
 /* Technical Skills */
+
 .technical .page-title{
     text-align: center;
     margin-bottom: 40px;
@@ -528,3 +545,13 @@ input::-webkit-inner-spin-button {
     font-size: 0.9rem;
     padding: 15px 0;
 }
+
+/* Make the site responsible */
+
+@media all and (max-width: 575px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+

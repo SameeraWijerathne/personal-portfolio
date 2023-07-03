@@ -5,8 +5,8 @@ const navElms = document.querySelectorAll('header nav a');
 const textAnim = new Typed('.changing-text',{
     strings:['Engineering Graduate','Full Stack Developer', 'Kids Book Illustrator' ],
     typeSpeed:110,
-    backSpeed:110,
-    backDelay:1000,
+    backSpeed:55,
+    backDelay:2000,
     loop:true
 });
 
@@ -24,15 +24,15 @@ ScrollReveal().reveal('.home-content-box h1, .about-img', { origin:'left' });
 ScrollReveal().reveal('.home-content-box p, .about-content-box h3', { origin:'right' });
 window.addEventListener('scroll', ()=>{
    sectionElms.forEach(section => {
-       const top=window.scrollY;
-       const offset=section.offsetTop-150;
-       const height=section.offsetHeight;
-       const id=section.getAttribute('id');
+       const top = window.scrollY;
+       const offset = section.offsetTop - 150;
+       const height = section.offsetHeight;
+       const id = section.getAttribute('id');
 
-       if(top>=offset && top<offset+height){
-           navElms.forEach(nav=>{
+       if (top >= offset && top < offset + height) {
+           navElms.forEach(nav => {
                nav.classList.remove("active");
-               document.querySelector('header nav a[href*='+ id + ']').classList.add('active');
+               document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
            });
        }
    })
