@@ -7,8 +7,7 @@
 
 :root {
     --text-color: #fff;
-    /*--main-color: #ff7c35;*/
-    --main-color: #bb77ed;
+    --main-color: #1cdce8;
     --bg-color-primary: #0e141f;
     --bg-color-secondary: #1b2437;
 }
@@ -64,13 +63,13 @@ ion-icon {
     font-size: 1.3rem;
 }
 
-span {
-    color: var(--main-color);
-}
 
-.animate-gradient-text, .animate-gradient-text-hero {
+.animate-gradient-text,
+.home-content-box h3 span,
+.active,
+.navbar a:hover{
     -webkit-text-fill-color: transparent;
-    animation: animated-gradient 5s ease-in-out infinite;
+    animation: animated-gradient 2s ease-in-out infinite;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(120deg, #1cdce8, #bb77ed, #f34a62);
@@ -182,8 +181,8 @@ span {
 }
 
 .btn {
-    display: inline-block;
-    padding: 15px 25px;
+    display: inline-flex;
+    padding: 1rem 1.5rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
@@ -192,6 +191,9 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn:hover {
@@ -234,16 +236,6 @@ span {
     position: relative;
     left: -100px;
 }
-
-/*.about-img img::after {*/
-/*    content: "";*/
-/*    height: 600px;*/
-/*    background-color: red;*/
-/*    width: 600px;*/
-/*    position: absolute;*/
-/*    display: inline-block;*/
-/*    top: 100%;*/
-/*}*/
 
 .about-content-box h2 {
     text-align: left;
@@ -548,10 +540,12 @@ input::-webkit-inner-spin-button {
 
 /* Make the site responsible */
 
-@media all and (max-width: 575px) {
-    .container {
-        width: 100vw;
-    }
+@media all and (min-width: 1024px) {
+
+}
+
+@media all and (max-width: 1023px) {
+
 }
 
 
